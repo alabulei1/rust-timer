@@ -6,7 +6,7 @@ use slack_flows::send_message_to_channel;
 pub async fn on_deploy() {
     // Note: the cron syntax uses UTC time.
     // Adjust the time according to your desired timezone.
-    schedule_cron_job(String::from("0 7 30 10 *"), String::from("Please remember to shut up the AWS machine before 2023/10/31.")).await;
+    schedule_cron_job(String::from("0 6 00 10 *"), String::from("Please remember to shut down the AWS machine on 2023/10/31.")).await;
 }
 
 #[schedule_handler]
