@@ -1,0 +1,13 @@
+[package]
+name = "rust-timer"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+schedule-flows = "0.3.0"
+slack-flows = "0.3.4"
+tokio_wasi = { version = "1.25.1", features = ["macros", "rt"] }
